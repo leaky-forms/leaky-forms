@@ -1,11 +1,10 @@
 ## Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission (USENIX Security'22)
 
-This repository contains the code for our [USENIX Security'22](https://www.usenix.org/conference/usenixsecurity22) paper titled
-_Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission_.
+This repository contains the code for our paper titled [_Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission_](https://homes.esat.kuleuven.be/~asenol/leaky-forms/leaky-forms-usenix-sec22.pdf).
 
 The paper is based on a measurement of email and password collection that occurs before the form submission on the top 100,000 websites. We evaluate the effect of user location (EU vs. US), browser configuration (desktop vs. mobile), and interaction with consent dialogs (accept all/reject all/no interaction).
 
-For a more detailed overview and access to our data, please visit the [project's homepage](https://github.com/leaky-forms).
+For a more detailed overview please visit [the project's homepage](https://homes.esat.kuleuven.be/~asenol/leaky-forms).
 
 ### Crawler
 
@@ -14,9 +13,9 @@ For a more detailed overview and access to our data, please visit the [project's
 A high-level overview of our crawler is given below:
 ![Crawler Arch](https://user-images.githubusercontent.com/48864422/156778150-9915495d-21e3-436f-ab9f-0a639a15701c.png)
 
-We extended DuckDuckGo’s **[Tracker Radar Collector](https://github.com/duckduckgo/tracker-radar-collector)** to measure email and password exfiltration. Our crawler was capable of detecting and filling email and password fields, and intercepting script access to filled input fields.
+We extended DuckDuckGo’s [Tracker Radar Collector](https://github.com/duckduckgo/tracker-radar-collector) to measure email and password exfiltration. Our crawler was capable of detecting and filling email and password fields, and intercepting script access to filled input fields.
 
-**Email field detection**: In order to identify email fields, we integrated into our crawler [Firefox Relay](http://mozilla.github.io/fathom/)’s [Fathom](http://mozilla.github.io/fathom/)-based [email field classifier](https://github.com/mozilla/fx-private-relay/blob/v1.2.2/extension/js/email_detector.js). Using this model allowed us to identify 76% more email fields than we would detect by simply searching for input fields with type `email`.
+**Email field detection**: In order to identify email fields, we integrated into our crawler [Firefox Relay](https://github.com/mozilla/fx-private-relay)’s [Fathom](https://mozilla.github.io/fathom/)-based [email field classifier](https://github.com/mozilla/fx-private-relay/blob/v1.2.2/extension/js/email_detector.js). Using this model allowed us to identify 76% more email fields than we would detect by simply searching for input fields with type `email`.
 
 **Consent automation**: We integrated [Consent-O-Matic](https://github.com/cavi-au/Consent-O-Matic/) into our crawler to investigate the effect of users’ consent preferences. Consent-O-Matic ([Nouwens et al.](https://arxiv.org/pdf/2001.02479.pdf)) is a browser extension that can recognize and interact (e.g., accept or reject cookies) with various Consent Management Provider (CMP) pop-ups. We configured Consent-O-Matic to log detected CMPs, and interact with the CMP.
 
