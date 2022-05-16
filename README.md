@@ -31,6 +31,11 @@ Leak detector module searches for the filled email address and the password, and
 
 You can find the Jupyter notebooks, pickles and CSVs that are used in the [analysis folder](https://github.com/asumansenol/leaky-forms/tree/main/analysis).
 
+### LeakInspector
+
+**Code**: https://github.com/leaky-forms/leak-inspector
+
+It is a proof-of-concept browser add-on that warns users against sniff attempts and blocks requests containing personal information. You can find the source code of this add-on in this [repo](https://github.com/asumansenol/leaky-forms/leak-inspector). 
 ### Reference
 
 ```tex
