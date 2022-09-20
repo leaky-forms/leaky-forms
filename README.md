@@ -19,6 +19,9 @@ We extended DuckDuckGo’s [Tracker Radar Collector](https://github.com/duckduck
 
 **Consent automation**: We integrated [Consent-O-Matic](https://github.com/cavi-au/Consent-O-Matic/) into our crawler to investigate the effect of users’ consent preferences. Consent-O-Matic ([Nouwens et al.](https://arxiv.org/pdf/2001.02479.pdf)) is a browser extension that can recognize and interact (e.g., accept or reject cookies) with various Consent Management Provider (CMP) pop-ups. We configured Consent-O-Matic to log detected CMPs, and interact with the CMP.
 
+### Data
+The data from ten crawls performed between May 2021 and June 2021 is available for download from this [link](https://data.ru.nl/collections/ru/icis/usenix-sec-22_dsc_549).
+
 ### Leak Detector
 
 **Code**: https://github.com/asumansenol/leaky-forms/tree/main/leak-detector
@@ -36,6 +39,7 @@ You can find the Jupyter notebooks, pickles and CSVs that are used in the [analy
 **Code**: https://github.com/leaky-forms/leak-inspector
 
 It is a proof-of-concept browser add-on that warns users against sniff attempts and blocks requests containing personal information. You can find the source code of this add-on in this [repo](https://github.com/asumansenol/leaky-forms/leak-inspector). 
+
 ### Reference
 
 ```tex
