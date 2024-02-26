@@ -43,11 +43,11 @@ It is a proof-of-concept browser add-on that warns users against sniff attempts 
 ### Reference
 
 ```tex
-@article{
-    author    = {Asuman Senol and Gunes Acar and Mathias Humbert and Frederik Zuiderveen Borgesius},
-    title     = {{Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission}},
-    booktitle = {Proceedings of the 31st USENIX Security Symposium (USENIX)},
-    year      = 2022,
-    month     = August
+@inproceedings{senol2022leaky,
+  title={Leaky Forms: a study of email and password exfiltration before form submission},
+  author={Senol, Asuman and Acar, Gunes and Humbert, Mathias and Borgesius, Frederik Zuiderveen},
+  booktitle={31st USENIX Security Symposium (USENIX Security 22)},
+  pages={1813--1830},
+  year={2022}
 }
 ```
