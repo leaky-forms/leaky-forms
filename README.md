@@ -1,6 +1,6 @@
 ## Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission (USENIX Security'22)
 
-This repository contains the code for our paper titled [_Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission_]([https://homes.esat.kuleuven.be/~asenol/leaky-forms/leaky-forms-usenix-sec22.pdf](https://www.usenix.org/system/files/sec22-senol.pdf)).
+This repository contains the code for our paper titled [_Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission_](https://www.usenix.org/system/files/sec22-senol.pdf).
 
 The paper is based on a measurement of email and password collection that occurs before the form submission on the top 100,000 websites. We evaluate the effect of user location (EU vs. US), browser configuration (desktop vs. mobile), and interaction with consent dialogs (accept all/reject all/no interaction).
 
