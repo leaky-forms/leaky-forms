@@ -360,7 +360,7 @@ class LeakDetector():
     def _compute_hashes(self, string, layers, prev_hashes=tuple()):
         """Returns all iterative hashes of `string` up to the
         specified number of `layers`"""
-        for h in self._hasher.supported_hashes:
+        for h in self._hash_set:
             hashed_string = self._hasher.get_hash(h, string)
             if hashed_string == string:  # skip no-ops
                 continue
